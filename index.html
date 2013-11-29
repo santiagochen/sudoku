@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	<title>sudoku</title>
+	<script type="text/javascript" src="http://ds-cc.serving-sys.com/BurstingScript/ch/EBLoader.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="wrap" id="wrap">
+	<ul class="sudoku-ul" id="sudoku-ul" style=""></ul>
+</div>
+
+
+<script type="text/template" id="sudokucell">
+<img class="thumb" id="thumb" src="<%=thumb%>">
+<h5 class="title" id="title"><%=title%></h5>
+<div class="sudokupanel" id="sudokupanel">
+	<a href="#" class="previmg" id="previmg">prev</a>
+	<a href="#" class="nextimg" id="nextimg">next</a>
+	<div class="imgswrap" id="imgswrap">
+		<img class="detailimg" id="detailimg"/>
+	</div>
+	<!--<a id="loginBtn" class="loginBtn" href="#">login?</a>
+	<a id="privateMesBtn" class="privateMesBtn" href="#">privateMes to Someone</a>-->
+	<a id="backcellBtn" class="backcellBtn" href="#">X</a>
+</div>
+</script>
+
+
+<script src="js/jquery.js"></script> 
+<!--<script type="text/javascript" src="http://underscorejs.org/underscore.js"></script>-->
+<script src="js/underscore.js"></script> 
+<script src="js/backbone.js"></script>
+
+<script src="js/model.js"></script>
+<script src="js/collection.js"></script>
+<script src="js/view.js"></script> 
+<script src="js/main.js"></script>
+
+
+</body>
+</html>

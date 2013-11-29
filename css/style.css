@@ -1,0 +1,97 @@
+/*
+sudoku css file
+*/
+body{color:#8a8a8a8;}
+div,a,p,h1,h2,h3,h4,h5,ul,li,span{margin:0; padding: 0;}
+
+
+.wrap{	
+	width: 330px;
+	height: 330px;
+	position: relative;
+	background: #333;
+}
+.sudoku-ul{
+	width: 100%;
+	height:100%;
+}
+.sudoku-cell{
+	width:100px;
+	height: 100px;
+	margin: 5px;
+	display:inline-block;
+	position: relative;
+}
+.sudoku-cell .thumb{
+	width: 100%;
+	height: 100%;
+}
+.sudoku-cell .title{
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	display: none;
+	background: #000;
+	opacity: .4;
+	color:#fff;
+	text-align: center;
+}
+
+/*.sudokupanel*/
+.sudokupanel{
+	display:none;
+	position: absolute;
+	top:0px;
+	left: 0px;
+	z-index: 1000;
+}
+.sudokupanel .loginBtn{
+	position: absolute;
+	top:0px;
+	left: 0px;
+	z-index: 1000;
+}
+.sudokupanel .privateMesBtn{
+	position: absolute;
+	bottom:0px;
+	left: 50%;
+	z-index: 1000;
+}
+.sudokupanel .backcellBtn{
+	position: absolute;
+	top:0px;
+	right: 0px;
+	z-index: 1000;
+	background: url(http://sudoku.qq.com/assets/x.png) 0px 0px no-repeat;
+	width: 32px;
+	height: 32px;
+	text-indent: -999em;
+}
+
+.previmg{
+	background: url(http://sudoku.qq.com/assets/lastimage-over.png) 0px 0px no-repeat;
+	position: absolute; 
+	width: 19px;
+	height: 36px;
+	top: 45%; 
+	left: 0px; 
+	display: none;
+	text-indent: -999em;
+}
+.nextimg{
+	background: url(http://sudoku.qq.com/assets/nextimage-over.png) 0px 0px no-repeat;
+	position: absolute; 
+	width: 19px;
+	height: 36px;
+	top: 45%; 
+	right: 0px; 
+	display: none;
+	text-indent: -999em;
+}
+
+
+
+
+
+
