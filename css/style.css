@@ -1,7 +1,7 @@
 /*
 sudoku css file
 */
-body{color:#8a8a8a8;}
+body{color:#8a8a8a;font-family: Tahoma,Arial,sans-serif;}
 div,a,p,h1,h2,h3,h4,h5,ul,li,span{margin:0; padding: 0;}
 
 
@@ -9,7 +9,8 @@ div,a,p,h1,h2,h3,h4,h5,ul,li,span{margin:0; padding: 0;}
 	width: 330px;
 	height: 330px;
 	position: relative;
-	background: #333;
+	background: #f2f2f2;
+	margin: 10px auto;
 }
 .sudoku-ul{
 	width: 100%;
@@ -44,33 +45,37 @@ div,a,p,h1,h2,h3,h4,h5,ul,li,span{margin:0; padding: 0;}
 	position: absolute;
 	top:0px;
 	left: 0px;
-	z-index: 1000;
+	z-index: 997;
 }
 .sudokupanel .loginBtn{
 	position: absolute;
-	top:0px;
-	left: 0px;
+	bottom:4px;
+	left: 40%;
+	color: #fff;
+	text-decoration: none;
 	z-index: 1000;
+	font-size: 13px;
+	/*display: none;*/
 }
 .sudokupanel .privateMesBtn{
 	position: absolute;
 	bottom:0px;
 	left: 50%;
-	z-index: 1000;
+	z-index: 997;
 }
 .sudokupanel .backcellBtn{
 	position: absolute;
 	top:0px;
 	right: 0px;
 	z-index: 1000;
-	background: url(http://sudoku.qq.com/assets/x.png) 0px 0px no-repeat;
+	background: url(/assets/x.png) 0px 0px no-repeat;
 	width: 32px;
 	height: 32px;
 	text-indent: -999em;
 }
 
 .previmg{
-	background: url(http://sudoku.qq.com/assets/lastimage-over.png) 0px 0px no-repeat;
+	background: url(/assets/lastimage-over.png) 0px 0px no-repeat;
 	position: absolute; 
 	width: 19px;
 	height: 36px;
@@ -80,7 +85,7 @@ div,a,p,h1,h2,h3,h4,h5,ul,li,span{margin:0; padding: 0;}
 	text-indent: -999em;
 }
 .nextimg{
-	background: url(http://sudoku.qq.com/assets/nextimage-over.png) 0px 0px no-repeat;
+	background: url(/assets/nextimage-over.png) 0px 0px no-repeat;
 	position: absolute; 
 	width: 19px;
 	height: 36px;
@@ -91,7 +96,237 @@ div,a,p,h1,h2,h3,h4,h5,ul,li,span{margin:0; padding: 0;}
 }
 
 
+#snspart{
+	font-size: 13px;
+	color: #ffffff;
+	position: absolute;
+	left: 3px;
+	bottom: 4px;
+	/*display: none;*/
+}
+#myicon{
+	width: 50px;
+	height: 50px;
+	margin-right: 65px;
+}
+#newweibo{
+	margin: 0 10px 0 0;
+	color: #ffffff;
+	text-decoration: none;
+}
+#newmes{
+	margin: 0 10px 0 0;
+	color: #ffffff;
+	text-decoration: none;
+}
 
+/*.newweibopanel*/
+.newweibopanel{
+	display:none;
+	position: absolute;
+	top:0px;
+	left: 0px;
+	z-index: 1998;
+}
 
+/*.newmespanel*/
+.newmespanel{
+	display:none; 
+	position: absolute;
+	background: #333;
+	height: 270px;
+	width: 326px;
+	top:0px;
+	left: 0px;
+	z-index: 1998;
+	padding: 30px 2px;
+}
+.newmes-uldiv{
+	position: absolute;
+	height: 270px;
+	width: 100%;
+	z-index: 1999;
+	overflow: hidden;
+	left: 4px;
+}
 
+.newmespanel .stopListBtn{
+	position: absolute;
+	top:0px;
+	right: 0px;
+	z-index: 1000;
+	background: url(/assets/x.png) 0px 0px no-repeat;
+	width: 32px;
+	height: 32px;
+	text-indent: -999em;
+}
+.newmespanel .sellistlabel{
+	position: absolute; 
+	font-size: 12px;
+	top: 10px;
+	left: 7px; 
+	color: #fff;
+}
+.newmespanel .prevlist{
+	background: url(/assets/upimage-over.png) 0px 0px no-repeat; 
+	position: absolute; 
+	width: 36px;
+	height: 19px;
+	top: 0px;
+	left: 45%; 
+	display: none;
+	text-indent: -999em;
+	z-index: 2000;
+}
+.newmespanel .nextlist{
+	background: url(/assets/downimage-over.png) 0px 0px no-repeat;
+	position: absolute; 
+	width: 36px;
+	height: 19px;
+	bottom: 0px;
+	left: 45%;
+	display: none;
+	text-indent: -999em;
+	z-index: 99;
+	z-index: 2000;
+} 
 
+.mutualListcell{
+	width:50px;
+	height: 50px;
+	margin: 1px 2px 1px 2px;
+	display:inline-block;
+	position: relative;
+}
+
+.newmes-ul{
+	position: absolute;
+	/*background: #333;*/
+	height: 100%;
+	width: 100%;
+	top:0px;
+	left: 0px;
+	z-index: 1999;
+}
+
+/*fillmespanel*/
+.fillmespanel{
+	position: absolute;
+	top:0px;
+	left: 0px;
+	z-index: 2001;
+	background: #f2f2f2;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+.fillmespanel .stopMesBtn{
+	position: absolute;
+	top:0px;
+	right: 0px;
+	z-index: 2000;
+	background: url(/assets/x-black.png) 0px 0px no-repeat;
+	width: 32px;
+	height: 32px;
+	text-indent: -999em;
+}
+.fillmespanel .towhom{
+	color: #666;
+	display: block;
+	margin:32px 10px 10px 10px;
+}
+.fillmespanel .mescontent{
+	resize:none;
+	width: 302px;
+	height: 200px;
+	margin:10px 10px 10px 10px;
+	border: 0px;
+}
+.fillmespanel .attachimg{
+	display: inline-block;
+	margin: 10px 0px 10px 10px;
+}
+.fillmespanel label{
+	font-size: 13px;
+	color: #666;
+}
+.fillmespanel #cbimg{
+
+}
+.fillmespanel .messubmit{
+	display: inline-block;
+	color: #666;
+	font-size: 16px;
+	font-family: Tahoma,Arial,sans-serif;
+	text-decoration: none;
+	margin:0px 10px 10px 230px;
+}
+
+.fillmespanel .sendok{
+	text-align:center;
+	padding:6px;
+	color:#fff;
+	background:#333;
+	display:block;
+	margin:40% 30%;
+	display: none;
+}
+
+/*fillweibopanel*/
+.fillweibopanel{
+	position: absolute;
+	top:0px;
+	left: 0px;
+	z-index: 1002;
+	background: #f2f2f2;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+.fillweibopanel .stopWeiboBtn{
+	position: absolute;
+	top:0px;
+	right: 0px;
+	z-index: 1000;
+	background: url(/assets/x-black.png) 0px 0px no-repeat;
+	width: 32px;
+	height: 32px;
+	text-indent: -999em;
+}
+.fillweibopanel .weibocontent{
+	resize:none;
+	width: 302px;
+	height: 200px;
+	margin:32px 10px 10px 10px;
+	border: 0px;
+}
+.fillweibopanel .atfriend{
+	color: #666;
+	font-size: 13px;
+	text-decoration: none;
+	margin:0px 10px 10px 180px;
+}
+.fillweibopanel .weibosubmit{
+	color: #666;
+	font-size: 16px;
+	font-family: Tahoma,Arial,sans-serif;
+	text-decoration: none;
+	margin:0px 10px 10px 10px;
+}
+
+.fillweibopanel .submitok{
+	text-align:center;
+	padding:6px;
+	color:#fff;
+	background:#333;
+	display:block;
+	margin:40% 30%;
+	display: none;
+}
+
+.loading{
+	top:45%;
+	left:45%;
+	position:absolute;
+	z-index: 9993;
+}
